@@ -12,9 +12,13 @@ function buscarAmigo(amigos, nombre) {
   // Ej:
   //  var amigos = [{ nombre: 'toni', edad: 33 } , { nombre: 'Emi', edad: 25 }];
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
-
-  // Tu código aca:
   
+  // Tu código aca:
+  for(var prop in amigos) {
+    if (amigos[prop].nombre == nombre) {
+      return amigos[prop];
+    }
+  };
 }
 
 // No modifiques nada debajo de esta linea //
